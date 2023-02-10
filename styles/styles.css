@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fa-bars{
+    font-size: 2em;
+}
+
+header{
+    height: 50px;
+    padding: 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px;
+}
+#title-heading{
+    color: whitesmoke;
+}
+nav{
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    width: 60px;
+    height: 570px;
+    padding: 20px 10px;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(87, 27, 143);
+    transition: all .3s ease-in-out;
+    z-index: 20;
+}
+.btn-platform{
+    margin: 8px 0;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+}
+.btn-platform > h6{
+    font-size: .8em;
+}
+.btn-platform:hover{
+    cursor: pointer;
+    background-color: rgb(49, 52, 56);
+}
+#game-list{
+    flex-wrap: wrap
+}
+.cardGame{
+    width: 300px;
+    margin: 0 20px 30px 0;
+    background-color: rgb(49, 52, 56);
+    align-self: center;
+    transition: all .3s;
+}
+.cardGame:hover{
+    transform: translateY(-10px);
+}
+.card-img-top{
+    object-fit: cover;
+}
+.spinner-border{
+    width: 50px;
+    height: 50px;
+}
+.btn-move{
+    background-color: rgb(49, 52, 56);
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: all .3s;
+}
+.btn-move:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+.metacritic,.metacritic-green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(210, 210, 7);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 5px;
+}
+.metacritic-green{
+    background-color: rgb(17, 157, 17);
+}
+@media (min-width: 768px) {
+    #div-heading{
+        margin: auto;
+    }
+    nav{
+        position: sticky;
+        top: 5px;
+        transform: translateX(0)!important;
+    }
+    .cardGame{
+        margin: 0 0 30px 0;
+    }
+    #input-search{
+        width: 580px;
+    }
+}

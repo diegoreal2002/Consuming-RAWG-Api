@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Game Database</title>
+</head>
+<body class="bg-dark">
+    <header class="d-flex justify-content-between align-items-center">
+        <div class="d-md-none">
+            <i class="fa-solid fa-bars" id="btn-nav"></i>
+        </div>
+        <div id="div-heading">
+            <a href="/index.html" id="title-heading"><h2 class="mb-0">Game Database</h2></a>
+        </div>
+    </header>
+    <div class="d-md-flex px-md-3">
+        <nav class="d-flex align-items-center flex-column">
+            <div class="text-center btn-platform" onclick="changeStyle(this)">
+                <i class="fa-solid fa-desktop"></i>
+                <h6>PC</h6>
+            </div>
+            <div class="text-center btn-platform" onclick="changeStyle(this)">
+                <i class="fa-brands fa-xbox"></i>
+                <h6>Xbox</h6>
+            </div>
+            <div class="text-center btn-platform" onclick="changeStyle(this)">
+                <i class="fa-brands fa-playstation"></i>
+                <h6>Ps</h6>
+            </div>
+            <div class="text-center btn-platform" onclick="changeStyle(this)">
+                <i class="fa-solid fa-gamepad"></i>
+                <h6 style="font-size: .55em;">Nintendo</h6>
+            </div>
+            <div class="text-center btn-platform" onclick="changeStyle(this)">
+                <i class="fa-brands fa-linux"></i>
+                <h6>Linux</h6>
+            </div>
+            <div class="text-center btn-platform" onclick="changeStyle(this)">
+                <i class="fa-brands fa-android"></i>
+                <h6 style="font-size: .6em;">Android</h6>
+            </div>
+            <div class="text-center btn-platform" onclick="changeStyle(this)">
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h6>IOS</h6>
+            </div>
+            <div class="text-center btn-platform" onclick="changeStyle(this)">
+                <i class="fa-solid fa-globe"></i>
+                <h6>Web</h6>
+            </div>
+        </nav>
+        <main class="mt-4 ms-md-3">
+            <div class="container">
+                <h1 class="m-0 fw-bold">Search your games ...</h1>
+            </div>
+            <div class="mt-2 my-4 container d-flex">
+                <input type="text" class="form-control me-3 w-100" id="input-search" placeholder="Type to search">
+            </div>
+            <div id="game-list" class="container d-flex justify-content-center justify-content-md-between justify-content-lg-around flex-wrap">
+
+            </div>
+            <div class="container d-flex justify-content-between" id="div-buttons-move">
+                <div class="btn-move" id="btn-before">Before Page</div>
+                <div class="btn-move" id="btn-next">
+                    Next Page
+                </div>
+            </div>
+        </main>
+    </div>
+    <hr>
+    <footer class="mt-2 p-3">
+        <center><h5>Powered by RAWG Api</h5></center>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/01d57623ea.js" crossorigin="anonymous"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>
